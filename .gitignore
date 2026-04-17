@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Keras/TF
+*.h5
+*.keras
+!examples/*.keras
+
+# ESP-IDF / Build files
+build/
+sdkconfig
+managed_components/
