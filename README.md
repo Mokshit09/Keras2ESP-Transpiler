@@ -37,26 +37,7 @@ To compile the generated project for the ESP32-S3:
    chmod +x deploy.sh
    ./deploy.sh examples/nn_model.keras my_gesture_project
 
----
 
-## 4. Final Python Logic Check
-Make sure your `generate_main.py` includes the `model_data.h` header in its output so the C compiler can find the weights:
-
-> **Important:** Ensure your generator script writes `#include "model_data.h"` at the top of the generated `main.c`.
-
----
-
-## 5. Pushing to GitHub
-Run these commands in your terminal:
-
-1. **Initialize:** `git init`
-2. **Add everything:** `git add .`
-3. **First Commit:** `git commit -m "Initial release: Automated Keras to ESP-DSP transpiler"`
-4. **Link to GitHub:** * Create a new repo on GitHub named `Keras2ESP-Transpiler`.
-   * `git remote add origin https://github.com/YOUR_USERNAME/Keras2ESP-Transpiler.git`
-5. **Push:** `git push -u origin main`
-
----
 
 ## Why this works for your Resume Tomorrow
 When you add the link to your resume, don't just say "Python script." Say:
