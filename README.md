@@ -38,7 +38,3 @@ To compile the generated project for the ESP32-S3:
    ./deploy.sh examples/nn_model.keras my_gesture_project
 
 
-
-## Why this works for your Resume Tomorrow
-When you add the link to your resume, don't just say "Python script." Say:
-> **"Developed a Python-to-C Transpiler for Embedded AI (TinyML), automating the conversion of Keras models into hardware-accelerated C for ESP32-S3."**
