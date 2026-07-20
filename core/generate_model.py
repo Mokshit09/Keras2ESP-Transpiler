@@ -42,7 +42,7 @@ def generate_main_c(model, filename="main.c"):
             f.write(f'    // Layer {i}: Dense ({in_dim} -> {out_dim})\n')
             
             # Matrix Multiplication
-            f.write(f'    dspm_mult_s16((int16_t*){current_input}, (int16_t*)layer_{i}_weights, (int16_t*)x{i+1}, 1, {in_dim}, {out_dim}, 0);\n')
+            f.write(f'    dspm_mult_s16((int16_t*){current_input}, (int16_t*)layer_{i}_weights, (int16_t*)x{i+1}, 1, {in_dim}, {out_dim}, 15);\n')
             
             # Bias Add
             f.write(f'    dsps_add_s16((int16_t*)x{i+1}, (int16_t*)layer_{i}_biases, (int16_t*)y{i+1}, {out_dim}, 1, 1, 1, 0);\n')
